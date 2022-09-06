@@ -481,12 +481,12 @@ header nav ul {
     margin: 30px auto;
 }
 
-.mainTop {
+.main-top {
     width: 100%;
     grid-column: 1;
 }
 
-.mainTop img {
+.main-top img {
     width: 80%;
     border-radius: 150px;
     border: 1px solid black;
@@ -494,17 +494,17 @@ header nav ul {
     margin-left: 50px;
 }
 
-.mainTop img:hover {
+.main-top img:hover {
     -webkit-filter: grayscale();
     filter: grayscale();
 }
 
-.mainTop2 {
+.main-top2 {
     width: 100%;
     grid-column: 2;
 }
 
-.mainTop2 h1 {
+.main-top2 h1 {
     font-size: 40px;
     font-weight: normal;
     overflow: hidden;
@@ -512,7 +512,7 @@ header nav ul {
     display: none;
 }
 
-.mainTop2 p {
+.main-top2 p {
     position: relative;
     top: 150px;
     color: blue;
@@ -523,7 +523,7 @@ header nav ul {
     font-weight: bold;
 }
 
-.asideTop {
+.aside-top {
     position: relative;
     width: 100%;
     font-size: 20px;
@@ -531,23 +531,23 @@ header nav ul {
     grid-column: 3;
 }
 
-.asideTop h2 {
+.aside-top h2 {
     font-size: 20px;
     color: tomato;
     margin-top: 130px;
 }
 
-.asideTop ul {
+.aside-top ul {
     list-style: none;
     padding-left: 10px;
 }
 
-.asideTop ul li {
+.aside-top ul li {
     font-size: 20px;
     color: blue;
 }
 
-.sideColumn {
+.side-column {
     width: 100%;
     height: 420px;
     box-sizing: border-box;
@@ -555,13 +555,13 @@ header nav ul {
     grid-column: 4;
 }
 
-.sideColumn ul {
+.side-column ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.exitLinks {
+.exit-links {
     padding: 10px;
     margin: 10px;
     opacity: .9;
@@ -569,7 +569,7 @@ header nav ul {
     text-align: center;
 }
 
-.exitLinks a {
+.exit-links a {
     display: block;
     width: 200px;
     height: 50px;
@@ -601,21 +601,21 @@ header nav ul {
     grid-row: 3;
 }
 
-.educationMain {
+.education-main {
     width: 100%;
     font-size: 18px;
     margin-left: 20px;
     grid-column: 1;
 }
 
-.experienceMain {
+.experience-main {
     width: 100%;
     font-size: 18px;
     margin-left: 20px;
     grid-column: 2;
 }
 
-.skillsMain {
+.skills-main {
     width: 100%;
     font-size: 18px;
     margin-left: 20px;
@@ -663,11 +663,11 @@ div div dl dd p {
     margin-bottom: 5px;
 }
 
-.skillsMain ul {
+.skills-main ul {
     list-style: none;
 }
 
-.skillsMain ul li {
+.skills-main ul li {
     position: relative;
     font-size: 18px;
     background-color: transparent;
@@ -675,10 +675,10 @@ div div dl dd p {
     color: blue;
 }
 
-.educationMain h2, .experienceMain h2, .skillsMain h2, .asideTop h2 {
+.education-main h2, .experience-main h2, .skills-main h2, .aside-top h2 {
     color: red;
     font-size: 22px;
-    margin-left: 15px;
+    margin: 10px;
 }
 
 .profile, .languages, .web-dev, .interests, .experience, .education {
@@ -826,6 +826,8 @@ footer {
     text-align: right;
 }
 
+/*css of projects.html*/
+
 .a-link {
     position: relative;
     top: 50px;
@@ -845,7 +847,7 @@ footer {
     filter: grayscale();
 }
 
-.imageBible {
+.image-bible {
     position: relative;
     top: 70px;
     width: 100%;
@@ -857,7 +859,7 @@ footer {
     margin-bottom: 0;
 }
 
-.imagePesen {
+.image-pesen {
     position: relative;
     top: 70px;
     width: 90%;
@@ -869,7 +871,7 @@ footer {
     margin-bottom: 0;
 }
 
-.imageKultura {
+.image-kultura {
     position: relative;
     top: 90px;
     width: 90%;
@@ -1045,3 +1047,136 @@ footer {
     text-align: center;
     padding-bottom: 20px;
 }
+
+/*css of news.html*/
+
+.news-main {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+.news1 {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    padding-top: 130px;
+    display: inline-block;
+}
+
+.news2 {
+    position: relative;
+    color: red;
+    font-weight: bold;
+    width: 100%;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.attention2 {
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    color: #F2B544;
+}
+
+.news3 {
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+}
+
+.news4 {
+    color: blue;
+}
+
+.box-news {
+    position: relative;
+    top: -300px;
+    left: 480px;
+    width: 50%;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.news-image {
+    position: relative;
+    width: 90%;
+    border: 1px solid red;
+    border-radius: 150px;
+}
+
+/*css of security.html*/
+
+.sec-main {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+.sec1 {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.sec2 {
+    position: relative;
+    color: red;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.attention-sec {
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #F2B544;
+}
+
+.sec3 {
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.sec4 {
+    color: blue;
+}
+
+.box-sec {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    margin-left: 30px;
+    top: -180px;
+    left: 480px;
+}
+
+.sec-image {
+    position: relative;
+    width: 90%;
+    border: 1px solid red;
+    border-radius: 150px;
+}
+
