@@ -30,6 +30,10 @@ header nav {
 
 header nav ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -441,3 +445,284 @@ header nav ul {
     position: relative;
     margin: 5px;
 }
+
+/*css of about.html*/
+
+.wrapper-about {
+    position: relative;
+    width: 100%;
+    height: 1050px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 40px 430px 500px 60px;
+}
+
+.row1a {
+    position: relative;
+    grid-row: 1;
+}
+
+.row2a {
+    position: relative;
+    width: 960px;
+    height: 430px;
+    grid-row: 2;
+    display: block;
+}
+
+/*sub-wrapper1a*/
+.sub-wrapper1a {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: 300px 200px 200px 250px;
+    height: 430px;
+    margin: 30px auto;
+}
+
+.mainTop {
+    width: 100%;
+    grid-column: 1;
+}
+
+.mainTop img {
+    width: 80%;
+    border-radius: 150px;
+    border: 1px solid black;
+    z-index: 1;
+    margin-left: 50px;
+}
+
+.mainTop img:hover {
+    -webkit-filter: grayscale();
+    filter: grayscale();
+}
+
+.mainTop2 {
+    width: 100%;
+    grid-column: 2;
+}
+
+.mainTop2 h1 {
+    font-size: 40px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
+}
+
+.mainTop2 p {
+    position: relative;
+    top: 150px;
+    color: blue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.asideTop {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    margin-left: 5px;
+    grid-column: 3;
+}
+
+.asideTop h2 {
+    font-size: 20px;
+    color: tomato;
+    margin-top: 130px;
+}
+
+.asideTop ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.asideTop ul li {
+    font-size: 20px;
+    color: blue;
+}
+
+.sideColumn {
+    width: 100%;
+    height: 420px;
+    box-sizing: border-box;
+    border: 3px solid red;
+    grid-column: 4;
+}
+
+.sideColumn ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.exitLinks {
+    padding: 10px;
+    margin: 10px;
+    opacity: .9;
+    line-height: 40px;
+    text-align: center;
+}
+
+.exitLinks a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    color: brown;
+    font-size: 20px;
+    font-family: 'Arial';
+    text-decoration: none;
+    background: lightgoldenrodyellow;
+    text-indent: 15px;
+}
+
+.row3a {
+    position: relative;
+    width: 960px;
+    height: 500px;
+    grid-row: 3;
+    display: block;
+}
+
+.sub-wrapper2a {
+    width: 960px;
+    margin: 30px auto;
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 25px;
+    height: 430px;
+    grid-row: 3;
+}
+
+.educationMain {
+    width: 100%;
+    font-size: 18px;
+    margin-left: 20px;
+    grid-column: 1;
+}
+
+.experienceMain {
+    width: 100%;
+    font-size: 18px;
+    margin-left: 20px;
+    grid-column: 2;
+}
+
+.skillsMain {
+    width: 100%;
+    font-size: 18px;
+    margin-left: 20px;
+    grid-column: 3;
+}
+
+div div dl {
+    position: relative;
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div div dl dt {
+    position: relative;
+    font-style: italic;
+    width: 100%;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+div div dl dd {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 80px;
+    margin-left: 15px;
+    background-color: transparent;
+    text-align: justify;
+}
+
+div div dl dd h3 {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div div dl dd p {
+    position: relative;
+    background-color: transparent;
+    text-align: left;
+    color: blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.skillsMain ul {
+    list-style: none;
+}
+
+.skillsMain ul li {
+    position: relative;
+    font-size: 18px;
+    background-color: transparent;
+    text-align: left;
+    color: blue;
+}
+
+.educationMain h2, .experienceMain h2, .skillsMain h2, .asideTop h2 {
+    color: red;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.profile, .languages, .web-dev, .interests, .experience, .education {
+    text-decoration: underline;
+}
+
+.row4a {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    grid-row: 4;
+}
+
+.sub-wrapper2a {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.left-footer-a {
+    grid-column: 1;
+}
+
+.left-footer-a h1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.right-footer-a {
+    grid-column: 3;
+    text-align: right;
+}
+
