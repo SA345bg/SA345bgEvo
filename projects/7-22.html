@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета /част 1/</title>
+    <style>
+        body {
+            width: 1200px; font: 18px Arial; margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" enctype="text/plain" action="mailto:fx345@abv.bg">
+        <fieldset>
+            <legend>Лични данни</legend>
+            <p>Име: <input type="text" name="name" value="" size="15" placeholder="Име" required></p>
+            <p>E-mail: <input type="email" name="email" value="" size="25" placeholder="Електронна поща" required></p>
+        </fieldset>
+        <fieldset>
+            <legend>Затлъстяване</legend>
+            <p>Q1: Знаете ли какво е нормалното за Вас тегло?</p>
+            <label><input type="radio" name="Q1" value="Да">Да</label>
+            <label><input type="radio" name="Q1" value="Не">Не</label>
+            <label><input type="radio" name="Q1" value="Не ме интересува. За какво ми е това?">Не ме интересува. За какво ми е това?</label>
+            <hr/>
+            <p>Q2: Ако реалното Ви тегло е по-голямо от нормалното, имате наднормено тегло. Знаете ли коя степен затлъстяване имате?</p>
+            <label><input type="radio" name="Q2" value="Да">Да</label>
+            <label><input type="radio" name="Q2" value="Не">Не</label>
+            <label><input type="radio" name="Q2" value="Не ме интересува. За какво ми е това?">Не ме интересува. За какво ми е това?</label>
+        </fieldset>
+        <fieldset>
+            <legend>Здравеопазване</legend>
+            <p>Q3: Имате ли личен лекар и посащавате ли го всяка година за профилактични прегледи?</p>
+            <select name="Q3" id="Q3" size="5">
+                <option value="Да">Да</option>
+                <option value="Не">Не</option>
+                <option value="Не ми трябва - здрав съм като камък.">Не ми трябва - здрав съм като камък.</option>
+                <option value="Имам личен лекар, но не правя профилактични прегледи.">Имам личен лекар, но не правя профилактични прегледи. </option>
+                <option value="Имам личен лекар и се подписвам, че съм правил профилактични прегледи без да съм правил нищо, за да не го глобят от Здравната каса.">Имам личен лекар и се подписвам, че съм правил профилактични прегледи без да съм правил нищо, за да не го глобят от Здравната каса.</option>
+            </select>
+            <hr/>
+            <p>Q4: Ходите ли на рехабилитация /възстановяване/ веднъж годишно по клинична пътека за 7 дни, т. е. за сметка на НЗОК, за да лекувате свое заболяване?</p>
+            <select name="Q4" id="Q4" size="4">
+                <option value="Да, в бази на СБР-НК ЕАД близо до Черно море.">Да, в бази на "СБР-НК" ЕАД близо до Черно море.</option>
+                <option value="Да, в бази на СБР-НК ЕАД в подножието на някоя наша планина. ">Да, в бази на "СБР-НК" ЕАД в подножието на някоя наша планина.</option>
+                <option value="Да, на балнеосанаториум в бази на СБР-НК ЕАД.">Да, на балнеосанаториум в бази на "СБР-НК" ЕАД.</option>
+                <option value="Не, нямам финансова възможност да си платя пътя и таксите. ">Не, нямам финансова възможност да си платя пътя и таксите.</option>
+            </select>
+            <hr/>
+            <p>Q5: Кога последно сте били на рехабилитация по клинична пътека за свое заболяване в базите на "СБР-НК" ЕАД [<a href="http://nkrehabilitation.bg/filiali/" target="_blank">nkrehabilitation.bg</a>] за 7 дни или на профилактика, рехабилитация и/или отдих в базите на "ПРО" ЕАД [<a href="https://www.bgholiday.com/noi" target="_blank">bgholiday.com</a>] за 10 дни?</p>
+            <label><input type="radio" name="Q5" value="Миналата година.">Миналата година.</label>
+            <label><input type="radio" name="Q5" value="Преди 5 години.">Преди 5 години.</label>
+            <label><input type="radio" name="Q5" value="Преди 10 години.">Преди 10 години.</label>
+            <label><input type="radio" name="Q5" value="Преди 20 години.">Преди 20 години.</label>
+            <label><input type="radio" name="Q5" value="По времето на социализма.">По времето на социализма.</label>
+            <label><input type="radio" name="Q5" value="Никога не съм ходил.">Никога не съм ходил.</label>
+        </fieldset>
+        <fieldset>
+            <legend>Затлъстяване 2</legend>
+            <p>Q6: От колко години сте с наднормено тегло?</p>
+            <label><input type="radio" name="Q6" value="От 1 година.">От 1 година.</label>
+            <label><input type="radio" name="Q6" value="От 3 години.">От 3 години.</label>
+            <label><input type="radio" name="Q6" value="От 5 години.">От 5 години.</label>
+            <label><input type="radio" name="Q6" value="От 10 години.">От 10 години.</label>
+            <label><input type="radio" name="Q6" value="От повече от 10 години.">От повече от 10 години.</label>
+            <hr/>
+            <p>Q7: Изследвали ли сте се за диабет, ако сте с наднормено тегло повече от 5 години /без значение от групата затлъстяване/? Затлъстяването е основният фактор за развитие на захарен диабет от тип 2.</p>
+            <select name="Q7" id="Q7" size="3">
+                <option value="Да.">Да.</option>
+                <option value="Не.">Не.</option>
+                <option value="Личният ми лекар не ме е пращал на такова изследване.">Личният ми лекар не ме е пращал на такова изследване.</option>
+            </select>
+            <hr/>
+            <p>Q8: Знаете ли колко пъти се повишава рискът да заболеете от захарен диабет /тип 2/ в сравнение с хората с нормално тегло, ако сте в първа, втора и съответно трета група на затлъстяване?</p>
+            <textarea name="Q8" id="Q8" cols="150" rows="1"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Диабет</legend>
+            <p>Q9: Какво представлява инсулинът и за какво служи?</p>
+            <textarea name="Q9" id="Q9" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q10: Къде се произвежда инсулинът?</p>
+            <textarea name="Q10" id="Q10" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q11: Всички тъкани ли се нуждаят от инсулин?</p>
+            <input type="radio" name="Q11" value="Да.">Да.
+            <input type="radio" name="Q11" value="Не.">Не.
+            <hr/>
+            <p>Q12: Кои тъкани са инсулинозависими?</p>
+            <textarea name="Q12" id="Q12" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q13: Кои тъкани са инсулинонезависими?</p>
+            <textarea name="Q13" id="Q13" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q14: Знаете ли какво представлява инсулиновата резистентност, която е характерна за хората с наднормено тегло?</p>
+            <textarea name="Q14" id="Q14" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q15: Знаете ли, че повишеното количество захар в кръвта Ви води до повишен синтез на инсулин, което води до повишен апетит?</p>
+            <textarea name="Q15" id="Q15" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q16: Знаете ли друг начин как да намалите килограмите си от вълчия си апетит вследствие на хиперинсулинизма /свръх секреция на инсулин/ освен гладуване на инат до докарване на язва и/или гастрит?</p>
+            <textarea name="Q16" id="Q16" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q17: Чували ли сте нещо за програмата "Редукция", която помага на хора с наднормено тегло да отслабнат без  да си докарат други болести, по която работят някои ендокринолози /имат лепенка на вратата с логото на програмата/?</p>
+            <label><input type="radio" name="Q17" value="Да.">Да.</label>
+            <label><input type="radio" name="Q17" value="Не.">Не.</label>
+        </fieldset>
+        <fieldset>
+            <legend>Култура на хранене</legend>
+            <p>Q18: Знаете ли кои са основните хранителни вещества за човека? Моля да ги изброите.</p>
+            <textarea name="Q18" id="Q18" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q19: Знаеле ли колко килокалории хранителна енергия има в 1 грам от всяко едно от тях /вижте отговора на Q18/? Моля да ги напишете.</p>
+            <textarea name="Q19" id="Q19" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q20: Коя е основната съставка на въглехидратната храна?</p>
+            <textarea name="Q20" id="Q20" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q21: Какви видове въглехидрати има? Моля да изброите по два-три от всеки вид.</p>
+            <textarea name="Q21" id="Q21" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q22: Кои въглехидрати се усвояват от организма бързо и кои бавно?</p>
+            <textarea name="Q22" id="Q22" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q23: Какво е гликогенът?</p>
+            <textarea name="Q23" id="Q23" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q24: За колко време максимум може да стигне захранването с гликоген?</p>
+            <textarea name="Q24" id="Q24" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q25: Какво представлява мастната тъкан и как се образува?</p>
+            <textarea name="Q25" id="Q25" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q26: Колко процента от енергията се складират в мастната тъкан на един човек с нормално тегло?</p>
+            <textarea name="Q26" id="Q26" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q27: Какво е съотношението в проценти на основните хранителни вещества в режима на хранене според диетолозите?</p>
+            <textarea name="Q27" id="Q27" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q28: Какви въглехидрати се съдържат в шоколада, сладоледа, плодовите сладкиши, мармалада, халвата, вафлите, пастите и т. н.?</p>
+            <textarea name="Q28" id="Q28" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q29: Защо въглехидратите от Q28 се водят вредни?</p>
+            <textarea name="Q29" id="Q29" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q30: Кой е главният източник на въглехидрати за човека?</p>
+            <textarea name="Q30" id="Q30" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q31: Какво представляват хранителните влакна в растителната храна?</p>
+            <textarea name="Q31" id="Q31" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q32: За какво са полезни баластните вещества в растителната храна?</p>
+            <textarea name="Q32" id="Q32" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q33: Кой е най-разпространеният източник на въглехидрати сред растителната храна?</p>
+            <textarea name="Q33" id="Q33" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q34: Какъв полизахарид има в хляба?</p>
+            <textarea name="Q34" id="Q34" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q35: Какво е "хлебна единица"?</p>
+            <textarea name="Q35" id="Q35" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q36: Колко грама бял или черен хляб съотвества на 1 хлебна единица?</p>
+            <textarea name="Q36" id="Q36" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q37: Колко е денонощната потребност на въглехидрати за човека в хлебни единици?</p>
+            <textarea name="Q37" id="Q37" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q38: Какъв е идеалният дневен хранителен режим /от колко хранения/?</p>
+            <textarea name="Q38" id="Q38" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q39: Как се разпределят хранителните единици за всяко хранене от Q38?</p>
+            <textarea name="Q39" id="Q39" cols="150" rows="1"></textarea>
+            <hr/>
+            <p>Q40: Кога пред деня е най-добре да се приемат въглехидратни храни и защо?</p>
+            <textarea name="Q40" id="Q40" cols="150" rows="1"></textarea>
+        </fieldset>
+        <br/>
+        <input type="submit" value="Изпрати">
+        <br/>
+        <p>Внимание! За да изпратите попълнената от Вас информация във формуляра, трябва да имате инсталиран <a href="https://clean.email/best-free-email-client">E-Mail Client</a> на компютъра си, който да е <a href="https://www.officetooltips.com/office_2016/tips/how_to_modify_default_mail_client_in_windows_10.html">конфигуриран</a> да изпраща писма от Вашата електронна поща! Така може да копирате отговорите си или да ги изпратите до друга своя електронна поща.</p>
+        <label></label>
+    </form>
+    <br />
+    <div class="back">
+        <a href="../projects.html">Назад</a>
+    </div>
+</body>
+</html>
