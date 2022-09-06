@@ -17,7 +17,64 @@ a:visited {
     color: lightskyblue;
 }
 
-<!--Begin of css of index.html-->
+/*main navigation*/
+
+header nav {
+    position: relative;
+	width: 100%;
+    height: 40px;
+	box-sizing: border-box;
+	background-color: grey;
+	color: white;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 40px;
+    background-color: grey;
+    opacity: 0.95;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: darkturquoise;
+    border-bottom: 3px solid red;
+}
+
+header nav ul li ul li {
+    display: none;
+}
+
+header nav ul li:hover ul li {
+    display: block;
+    z-index: 100;
+}
+
+header nav ul li ul li a:hover {
+    display: block;
+    border-bottom: 3px solid red;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+/*css of index.html*/
 
 .wrapper-index {
     position: relative;
@@ -116,9 +173,49 @@ a:visited {
     grid-row: 3;
 }
 
-<!--Begin of css of services.html-->
+.sub-wrapper2i {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: 300px 360px 300px;
+}
 
-.wrapper {
+/*footer*/
+.left-footer {
+    display: inline-block;
+    grid-column: 1;
+}
+
+.left-footer h1 {
+    position: relative;
+    width: 300px;
+    line-height: 40px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 0;
+    margin-top: 10px;
+}
+
+.right-footer {
+    display: inline-block;
+    grid-column: 3;
+    justify-self: end;
+}
+
+.social {
+    position: relative;
+    margin: 5px;
+}
+
+
+/*css of services.html*/
+
+.wrapper-services {
     position: relative;
     width: 100%;
     height: 800px;
@@ -129,7 +226,7 @@ a:visited {
 }
 
 /*header*/
-.row1 {
+.row1s {
     position: relative;
     width: 100%;
     height: 40px;
@@ -137,62 +234,7 @@ a:visited {
     grid-row: 1;
 }
 
-header nav {
-    position: relative;
-	width: 100%;
-    height: 40px;
-	box-sizing: border-box;
-	background-color: grey;
-	color: white;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    position: relative;
-    float: left;
-    width: 160px;
-    height: 40px;
-    background-color: grey;
-    opacity: 0.95;
-    line-height: 40px;
-    text-align: center;
-    font-size: 20px;
-    z-index: 100;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-header nav ul li a:hover {
-    background-color: darkturquoise;
-    border-bottom: 3px solid red;
-}
-
-header nav ul li ul li {
-    display: none;
-}
-
-header nav ul li:hover ul li {
-    display: block;
-    z-index: 100;
-}
-
-header nav ul li ul li a:hover {
-    display: block;
-    border-bottom: 3px solid red;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-.row2 {
+.row2s {
     position: relative;
     width: 100%;
     height: 150px;
@@ -200,7 +242,7 @@ header nav ul {
     grid-row: 2;
 }
 
-.row2 h1 {
+.row2s h1 {
     position: relative;
     font-size: 30px;
     color: white;
@@ -217,14 +259,14 @@ header nav ul {
     border: 1px solid white;
 }
 
-.row3 {
+.row3s {
     position: relative;
     width: 100%;
     height: 600px;
     grid-row: 3;
 }
 
-.sub-wrapper {
+.sub-wrapper1s {
     position: relative;
     display: grid;
     grid: subgrid;
@@ -326,7 +368,7 @@ header nav ul {
     color: blue; 
 }
 
-.row4 {
+.row4s {
     position: relative;
     grid-row: 4;
     width: 100%;
@@ -334,7 +376,7 @@ header nav ul {
     background-color: rgb(242 95 41);
 }
 
-.row4 h4 {
+.row4s h4 {
     position: relative;
     font-size: 20px;
     font-weight: bold;
@@ -354,14 +396,14 @@ header nav ul {
     color: white;
 }
 
-.row5 {
+.row5s {
     position: relative;
     grid-row: 5;
     width: 100%;
     height: 60px;
 }
 
-.sub-wrapper2 {
+.sub-wrapper2s {
     position: relative;
     width: 100%;
     height: 50px;
